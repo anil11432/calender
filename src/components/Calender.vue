@@ -30,7 +30,7 @@
             <input type="text" placeholder="Enter Detail" v-model="name">
         </div>
         <ul class="list-group col-md-12">
-            <li v-for="(listOccasion, index) in listOccasions" @click="listItem($event)" :key="index" class="list-group-item">
+            <li v-for="(listOccasion, index) in listOccasions" :key="index" class="list-group-item">
               {{listOccasion.date}}th/{{listOccasion.month}} : {{listOccasion.eventName}} : {{listOccasion.detail}}
                 <button v-on:click="del(index)" class="btn btn-danger btn-xs">Delete</button>
             </li>
