@@ -37,7 +37,7 @@
             </li>
         </ul>
     </div>
-    <!-- <button class="btn btn-success" @click="save()">save</button> -->
+    <button class="btn btn-success" @click="save()">save</button>
 </div>
 </template>
 <script>
@@ -101,10 +101,6 @@ export default {
       this.eventName = occ;
     },
     save: function(){
-      console.log(this.value);
-      console.log(this.userselect);
-      var m = document.getElementById('usr').value;
-      console.log(m);
       console.log(this.listOccasions);
     },
     del:function(index){
